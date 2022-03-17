@@ -26,7 +26,7 @@ FromMeToYou
 	}
 
 }
-/* Screen Dump.
+/* Screen Dump
 From: Mr. Wilson
 Address: Acer Computer,Lab 314
 Date: Mar 16, 2022
