@@ -29,8 +29,6 @@ public class MyInitials {
 	}
 	
 	/* Screen Dump
----------
-|
 
 
 
