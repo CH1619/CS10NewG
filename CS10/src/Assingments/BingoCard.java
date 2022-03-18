@@ -1,3 +1,16 @@
+/*
+
+Program: BingoCard.java          Date: Mar 18 2022
+
+
+Author: Charlie Houston 
+School: CHHS
+Course: Computer Science 10
+ 
+
+*/
+
+
 package Assingments;
 
 public class BingoCard 
@@ -15,3 +28,15 @@ public class BingoCard
 	}
 
 }
+/* Screen Dump
+B	 I	 N	  G	   O
+14	 25	 34	  55   67
+2	 19	 39	  51   62
+8	 16	 Free 54   68
+7	 17	 45	  46   74
+5	 30	 37	  58   65
+
+
+
+
+ */
