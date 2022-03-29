@@ -1,12 +1,14 @@
 package Exercises;
 
-public class Ex4 
+public class Ex05 
 {
 
 	public static void main(String[] args) 
 	{
-		int maxSpeed=120;
-		System.out.print(maxSpeed);
+		int x = 5;
+		int y = 10;
+		System.out.println(x + y);
+
 	}
 
 }

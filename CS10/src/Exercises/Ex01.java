@@ -1,12 +1,10 @@
 package Exercises;
 
-public class Ex3 
-{
+public class Ex01 {
 
 	public static void main(String[] args) 
 	{
-	String carName="Volvo";	
-	System.out.print(carName);
+	System.out.println("Hello World");
 	}
 
 }
