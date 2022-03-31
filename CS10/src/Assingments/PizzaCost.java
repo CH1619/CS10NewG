@@ -21,15 +21,15 @@ public class PizzaCost
 	Double LaborCost= 0.75;
 	Double RentCost= 1.00;
 	Double Materials= 0.05;
-	Scanner myObj = new Scanner(System.in);
-	String diameter;
-    
-    // Enter Diameter and press Enter
-    System.out.println("Enter the diameter of the pizza in inches:");
-    diameter = myObj.nextLine();   
-	
+	try (Scanner myObj = new Scanner(System.in)) 
+	{
+		String diameter;
+		// Enter Diameter and press Enter
+		System.out.println("Enter the diameter of the pizza in inches:");
+		diameter = myObj.nextLine();
+	}
 	System.out.print("The Cost of making the pizza is:  "  );
-	System.out.print(LaborCost+RentCost);
+	System.out.print(LaborCost*RentCost);
 	}
 	
 	
