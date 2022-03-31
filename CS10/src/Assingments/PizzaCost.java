@@ -18,18 +18,21 @@ public class PizzaCost
 
 	public static void main(String[] args) 
 	{
-	Double LaborCost= 0.75;
-	Double RentCost= 1.00;
-	Double Materials= 0.05;
+		
+		
+	double diameter;	
+	double LaborCost= 0.75;
+	double RentCost= 1.00;
+	double Materials= 0.05;
 	try (Scanner myObj = new Scanner(System.in)) 
 	{
-		String diameter;
+		
 		// Enter Diameter and press Enter
 		System.out.println("Enter the diameter of the pizza in inches:");
-		diameter = myObj.nextLine();
+		diameter = myObj.nextDouble();
 	}
 	System.out.print("The Cost of making the pizza is:  "  );
-	System.out.print(LaborCost*RentCost);
+	System.out.print(diameter*diameter*Materials+LaborCost+RentCost);
 	}
 	
 	
