@@ -46,10 +46,17 @@ public class Assingment06
 	
 /* Screen Dump
 
-
-
-
-
+What is your first Name?
+Charlie
+What is your last name?
+Houston
+What grade are you in?
+10
+What school do you attend?
+CHHS
+What is your favourite hobby?
+Skiing
+Hello, your name is Charlie Houston, you are currently in grade 10 at CHHS. Your favourite hobby is Skiing
 
 */
 	}
