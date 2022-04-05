@@ -42,9 +42,16 @@ public class Assingment06
 	System.out.println("What is your favourite hobby?");
 	hobby = myObj.next();
 	
-	System.out.println("Hello, your name is "+ firstName + " " + lastName + ", you are currently in grade " + grade + " at " + school + ". Your favourite hobby is ");
+	System.out.println("Hello, your name is "+ firstName + " " + lastName + ", you are currently in grade " + grade + " at " + school + ". Your favourite hobby is " + hobby);
 	
-	
+/* Screen Dump
+
+
+
+
+
+
+*/
 	}
 
 }
