@@ -26,9 +26,13 @@ public class MyInitials {
 		System.out.println("|\t\t|\t|");
 		System.out.println("|\t\t|\t|");
 		System.out.println("--------\t|\t|");
+
 	}
 	
-	/* Screen Dump
+	
+
+}
+/* Screen Dump
 --------	|		|
 |			|		|
 |			|		|
@@ -42,6 +46,4 @@ public class MyInitials {
 
 
 	 
-	 */	
-
-}
+*/	

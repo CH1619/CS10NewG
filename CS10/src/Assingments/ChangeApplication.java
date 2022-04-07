@@ -9,6 +9,7 @@ Course: Computer Science 10
  
 
 */
+
 package Assingments;
 
 import java.util.Scanner;
@@ -37,6 +38,15 @@ public class ChangeApplication
 	System.out.println("Dimes: " + dimes);
 	
 	System.out.println("Nickels: " + nickels);
+
 	}
 
 }
+/* Screen Dump
+Enter the ammount of change you have: 
+219
+The ammount of change you have is: 219
+Quarters: 8
+Dimes: 1
+Nickels: 1	 
+*/

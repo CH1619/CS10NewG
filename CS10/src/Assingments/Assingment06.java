@@ -44,6 +44,10 @@ public class Assingment06
 	
 	System.out.println("Hello, your name is "+ firstName + " " + lastName + ", you are currently in grade " + grade + " at " + school + ". Your favourite hobby is " + hobby);
 	
+
+	}
+
+}
 /* Screen Dump
 
 What is your first Name?
@@ -59,6 +63,3 @@ Skiing
 Hello, your name is Charlie Houston, you are currently in grade 10 at CHHS. Your favourite hobby is Skiing
 
 */
-	}
-
-}

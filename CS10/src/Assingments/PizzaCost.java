@@ -33,15 +33,14 @@ public class PizzaCost
 	}
 	System.out.print("The cost of making the pizza is:  "  );
 	System.out.print(diameter*diameter*Materials+LaborCost+RentCost);
+
 	}
 	
 	
+
+}
 /* Screen Dump
 Enter the diameter of the pizza in inches:
 user input=10
 The cost of making the pizza is: 6.75
-
-
-	 
 */
-}
