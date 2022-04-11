@@ -1,16 +1,15 @@
 package Exercises;
 
-public class Ex24 
+public class Ex25 
 {
 
 	public static void main(String[] args) 
 	{
 	int x = 50;
-	int y = 10;
-	if (x > y) 
-	{
-	System.out.println("Hello World");
-	}
+	int y = 50;
+	if (x ==y) {
+		  System.out.println("Hello World");
+		}
 
 	}
 
