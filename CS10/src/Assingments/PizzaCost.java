@@ -1,5 +1,3 @@
-package Assingments;
-
 /*
 
 Program: PizzaCost.java          Date: Mar 30
@@ -11,6 +9,9 @@ Course: Computer Science 10
  
 
 */
+package Assingments;
+
+
 import java.util.Scanner; // import the Scanner class 
 
 public class PizzaCost 

@@ -1,3 +1,14 @@
+/*
+
+Program: DivandMod.java          Date: Apr 8
+
+
+Author: Charlie Houston
+School: CHHS
+Course: Computer Science 10
+ 
+
+*/
 package Assingments;
 
 import java.util.Scanner;
@@ -27,3 +38,18 @@ public class DivandMod
 	}
 
 }
+/* Screen Dump
+Enter an integer: 
+2
+Enter a second integer: 
+14
+2/14=0
+2%14=2
+
+14/2=7
+14%2=0
+	 
+
+
+	 
+*/
