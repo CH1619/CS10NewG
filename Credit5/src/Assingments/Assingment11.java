@@ -91,3 +91,15 @@ public class Assingment11
 	}
 
 }
+/* Screen Dump
+Please enter any three digits: 
+459
+The largest of the three digits is: 9
+The smallest of the three digits is: 4
+The sum of the three digits is: 18
+The product of the three digits is: 180
+The average of the three digits is: 6
+
+ 
+ 
+*/

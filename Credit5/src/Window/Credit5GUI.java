@@ -17,7 +17,7 @@ public class Credit5GUI {
 	private JFrame frame;
 	private JTextField Fn;
 	private JTextField Ln;
-	private JTextField textField_2;
+	private JTextField g2;
 
 	/**
 	 * Launch the application.
@@ -57,6 +57,7 @@ public class Credit5GUI {
 		panel.setLayout(null);
 		
 		JLabel dis = new JLabel(" ");
+		dis.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 		dis.setBounds(10, 160, 496, 56);
 		panel.add(dis);
 		
@@ -82,10 +83,10 @@ public class Credit5GUI {
 		ag.setBounds(10, 93, 56, 30);
 		panel.add(ag);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(93, 98, 103, 20);
-		panel.add(textField_2);
+		g2 = new JTextField();
+		g2.setColumns(10);
+		g2.setBounds(93, 98, 103, 20);
+		panel.add(g2);
 		
 		JButton sb = new JButton("Submit");
 		sb.addActionListener(new ActionListener() 
@@ -94,8 +95,9 @@ public class Credit5GUI {
 			{
 			String Fnn = Fn.getText();
 			String Lnn = Ln.getText();
+			String Ag2 = g2.getText();
 			
-			dis.setText("First Name is: " + Fnn + " Last name is: " + Lnn);
+			dis.setText("First Name is: " + Fnn + " Last name is: " + Lnn + " Age is: " + Ag2);
 			
 			}
 		});
@@ -104,6 +106,14 @@ public class Credit5GUI {
 		panel.add(sb);
 		
 		JButton cl = new JButton("Clear");
+		cl.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				Fn.setText(" ");
+				Ln.setText(" ");
+				g2.setText(" ");
+			}
+		});
 		cl.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		cl.setBounds(208, 73, 110, 44);
 		panel.add(cl);
