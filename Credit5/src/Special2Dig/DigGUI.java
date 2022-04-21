@@ -56,7 +56,7 @@ public class DigGUI {
 		panel.add(dis);
 		
 		JLabel lblNewLabel = new JLabel("Enter two digit number:");
-		lblNewLabel.setBounds(30, 36, 129, 38);
+		lblNewLabel.setBounds(30, 36, 153, 38);
 		panel.add(lblNewLabel);
 		
 		td = new JTextField();
@@ -68,15 +68,31 @@ public class DigGUI {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-			String twoDigit = td.getText();
-			int twoD = Integer.parseInt(twoDigit);
+			String twoDigit = td.getText();//Record the two digits
 			
-			int firstD = twoD/10;
+			int twoD = Integer.parseInt(twoDigit);//get the integer part
 			
-			int secondD = twoD%10;
+			int firstD = twoD/10;//record first digit
+			
+			int secondD = twoD%10;//record second digit
+			
+			int sum = firstD + secondD;//record the sum
+			
+			int prdc = firstD * secondD;//record the product
+			
+			int check = sum + prdc;//creating a sum of 
+			
+			if (check == twoD)
+			{
+			dis.setText(twoD + " is a special two digit number");	
+			}
+			else
+			{
+			dis.setText(twoD + " is not a special two digit number");	
+			}
+			//dis.setText(Integer.toString(firstD) + "" + Integer.toString(secondD) + "Sum: " +sum );//display the special number
 			
 			
-			dis.setText(Integer.toString(firstD));
 			}
 		});
 		btnNewButton.setBounds(185, 36, 122, 56);
@@ -85,6 +101,13 @@ public class DigGUI {
 		
 		
 		JButton btnNewButton_1 = new JButton("Clear");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+			td.setText("");
+			dis.setText("");
+			}
+		});
 		btnNewButton_1.setBounds(185, 103, 122, 56);
 		panel.add(btnNewButton_1);
 	}
