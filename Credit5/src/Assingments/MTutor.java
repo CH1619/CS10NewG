@@ -1,3 +1,15 @@
+/*
+
+Program: MTutor.java          Date: Apr 21
+
+
+Author: Charlie Houston
+School: CHHS
+Course: Computer Science 10
+ 
+
+*/
+
 package Assingments;
 
 import java.util.Scanner;
@@ -17,7 +29,7 @@ public class MTutor
 	
 	System.out.println("Select an operator by typing the associated number: ");
 	
-	System.out.println("1 : Addtion");
+	System.out.println("1 : Addition");
 	System.out.println("2 : Subtraction");
 	System.out.println("3 : Division");
 	System.out.println("4 : Multiplication");
@@ -74,7 +86,7 @@ public class MTutor
 	int answer4 = Qanswer.nextInt();
 	if (answer4 == Canswer4)
 	{
-	System.out.println("You got it right! Congradulations!!");
+	System.out.println("You got it right! Congratulations!!");
 	}
 	else
 	{
@@ -83,10 +95,17 @@ public class MTutor
 	break;
 	}
 	
-	
-	
-	
-	
 	}
 
 }
+/* Screen Dump
+Select an operator by typing the associated number: 
+1 : Addition
+2 : Subtraction
+3 : Division
+4 : Multiplication
+4
+What is 4*5?
+20
+You got it right! Congratulations!!
+*/
