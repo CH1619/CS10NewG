@@ -13,10 +13,9 @@ public class HonRoll
 		
 		double gpa = usinp.nextDouble();
 	
-		while(gpa == -1)
+		while(gpa != -1)
 		{
-		System.exit(0);
-		}
+	
 		System.out.println("Your gpa is " + gpa);
 		if(gpa > 3.79)
 		{
@@ -34,8 +33,11 @@ public class HonRoll
 		{
 		System.out.println("Sorry, at this gpa, you did not qualify for an honours distinction");		
 		}
-	System.out.println("Would you like to enter another gpa?");
-	System.out.println("1: yes 2: no");
+		System.out.println("To continue, enter another gpa. To quit, enter -1");
+		gpa = usinp.nextDouble();
+		}
+		
+		System.out.println("Thank you for using our program, have a great day!");
 	
 	}
 	

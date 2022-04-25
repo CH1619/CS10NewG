@@ -11,13 +11,14 @@ import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
 
 public class Credit5GUI {
 
 	private JFrame frame;
 	private JTextField Fn;
 	private JTextField Ln;
-	private JTextField g2;
 
 	/**
 	 * Launch the application.
@@ -52,13 +53,18 @@ public class Credit5GUI {
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 22, 555, 242);
+		panel.setBounds(10, 22, 555, 279);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
+		JComboBox g2 = new JComboBox();
+		g2.setModel(new DefaultComboBoxModel(new String[] {"10", "11", "12"}));
+		g2.setBounds(93, 93, 145, 22);
+		panel.add(g2);
+		
 		JLabel dis = new JLabel(" ");
 		dis.setFont(new Font("Times New Roman", Font.PLAIN, 12));
-		dis.setBounds(10, 160, 496, 56);
+		dis.setBounds(10, 212, 496, 56);
 		panel.add(dis);
 		
 		JLabel fn = new JLabel("First Name");
@@ -66,7 +72,7 @@ public class Credit5GUI {
 		panel.add(fn);
 		
 		Fn = new JTextField();
-		Fn.setBounds(93, 16, 103, 20);
+		Fn.setBounds(93, 16, 145, 20);
 		panel.add(Fn);
 		Fn.setColumns(10);
 		
@@ -76,17 +82,12 @@ public class Credit5GUI {
 		
 		Ln = new JTextField();
 		Ln.setColumns(10);
-		Ln.setBounds(93, 57, 103, 20);
+		Ln.setBounds(93, 57, 145, 20);
 		panel.add(Ln);
 		
-		JLabel ag = new JLabel("Age");
+		JLabel ag = new JLabel("Grade");
 		ag.setBounds(10, 93, 56, 30);
 		panel.add(ag);
-		
-		g2 = new JTextField();
-		g2.setColumns(10);
-		g2.setBounds(93, 98, 103, 20);
-		panel.add(g2);
 		
 		JButton sb = new JButton("Submit");
 		sb.addActionListener(new ActionListener() 
@@ -95,14 +96,25 @@ public class Credit5GUI {
 			{
 			String Fnn = Fn.getText();
 			String Lnn = Ln.getText();
-			String Ag2 = g2.getText();
-			
-			dis.setText("First Name is: " + Fnn + " Last name is: " + Lnn + " Age is: " + Ag2);
+			int grade;
+			if(g2.getSelectedItem().equals("10"))
+			{
+			grade = 10;
+			}
+			else if(g2.getSelectedItem().equals("11"))
+			{
+			grade = 11;
+			}
+			else
+			{
+			grade = 12;
+			}
+			dis.setText("First Name is: " + Fnn + " Last name is: " + Lnn + " Grade is: " + grade );
 			
 			}
 		});
 		sb.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		sb.setBounds(208, 12, 110, 44);
+		sb.setBounds(248, 11, 116, 56);
 		panel.add(sb);
 		
 		JButton cl = new JButton("Clear");
@@ -111,12 +123,14 @@ public class Credit5GUI {
 			{
 				Fn.setText(" ");
 				Ln.setText(" ");
-				g2.setText(" ");
+				
 			}
 		});
 		cl.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		cl.setBounds(208, 73, 110, 44);
+		cl.setBounds(248, 78, 116, 50);
 		panel.add(cl);
+		
+		
 		
 		
 	}
