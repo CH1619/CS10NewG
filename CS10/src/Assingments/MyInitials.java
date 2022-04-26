@@ -17,7 +17,7 @@ public class MyInitials {
 
 	public static void main(String[] args) 
 	{
-		System.out.println("--------\t|\t|");
+		System.out.println("--------\t|\t|");//Outputting initials
 		System.out.println("|\t\t|\t|");
 		System.out.println("|\t\t|\t|");
 		System.out.println("|\t\t|\t|");

@@ -19,30 +19,32 @@ public class Assingment06
 
 	public static void main(String[] args) 
 	{
-	Scanner myObj = new Scanner(System.in);
+		Scanner myObj = new Scanner(System.in);//creating scanner
 	
-	String firstName;
-	String lastName;
-	int grade;
-	String school;
-	String hobby;
+		String firstName;//assigning variables
+		String lastName;
+		int grade;
+		String school;
+		String hobby;
 	
-	System.out.println("What is your first Name?"); 
-	firstName = myObj.next();  
-	System.out.println("What is your last name?");
-	lastName = myObj.next();
+		System.out.println("What is your first Name?");//prompt first name
+		firstName = myObj.next();//record first name  
+
+		System.out.println("What is your last name?");//prompt last
+		lastName = myObj.next();//record last
 	
-	System.out.println("What grade are you in?");
-	grade = myObj.nextInt();
+		System.out.println("What grade are you in?");//prompt grade
+		grade = myObj.nextInt();//record grade
 
 	
-	System.out.println("What school do you attend?");
-	school = myObj.next();
+		System.out.println("What school do you attend?");//prompt school
+		school = myObj.next();//record school
 	
-	System.out.println("What is your favourite hobby?");
-	hobby = myObj.next();
+		System.out.println("What is your favourite hobby?");//prompt hobby
+		hobby = myObj.next();//record hobby
 	
-	System.out.println("Hello, your name is "+ firstName + " " + lastName + ", you are currently in grade " + grade + " at " + school + ". Your favourite hobby is " + hobby);
+		System.out.println("Hello, your name is "+ firstName + " " + lastName + 
+		", you are currently in grade " + grade + " at " + school + ". Your favourite hobby is " + hobby);//pulling variables and display message
 	
 
 	}

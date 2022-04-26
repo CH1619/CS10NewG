@@ -18,7 +18,7 @@ FromMeToYou
 
 	public static void main(String[] args) 
 	{
-		System.out.println("From: Mr. Wilson");	
+		System.out.println("From: Mr. Wilson");//Outputting the message	
 		System.out.println("Address: Acer Computer,Lab 314");
 		System.out.println("Date: Mar 16, 2022\n");
 		System.out.println("To: Charlie Houston\n");

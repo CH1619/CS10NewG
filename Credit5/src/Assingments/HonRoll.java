@@ -1,3 +1,15 @@
+/*
+
+Program: HonRoll.java          Date: Apr 25
+
+
+Author: Please enter your first and last name here 
+School: CHHS
+Course: Computer Science 10
+ 
+
+*/
+
 package Assingments;
 
 import java.util.Scanner;
