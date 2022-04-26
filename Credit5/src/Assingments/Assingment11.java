@@ -12,73 +12,68 @@ Course: Computer Science 10
 
 package Assingments;
 
-import java.util.Scanner;
+import java.util.Scanner;//import scanner 
 
 public class Assingment11 
 {
 
 	public static void main(String[] args) 
 	{
-	Scanner userinput = new Scanner(System.in);
+		Scanner userinput = new Scanner(System.in);//create scanner
 
-	System.out.println("Please enter any three digits: ");
+		System.out.println("Please enter any three digits: ");//prompt for digits
+		
+		int numbers = userinput.nextInt();//record numbers
 	
-	int numbers = userinput.nextInt();
+		int firstDig = numbers / 100;//pulling first dig
 	
-	int firstDig = numbers / 100;
+		int secondDig = (numbers%100)/10;//pulling second dig
 	
-	int secondDig = (numbers%100)/10;
+		int thirdDig = ((numbers%100)%10)/1;//pulling third dig
 	
-	int thirdDig = ((numbers%100)%10)/1;
+		int max = 0;//creating max and min
 	
-	int max = 0;
+		int min = 0;
 	
-	int min = 0;
+		int sum = secondDig + firstDig + thirdDig;//record sum
 	
-	int sum = secondDig + firstDig + thirdDig;
+		int pro = secondDig * firstDig * thirdDig;//record product
 	
-	int pro = secondDig * firstDig * thirdDig;
+		int avr = (secondDig + firstDig + thirdDig)/3;//record average
 	
-	int avr = (secondDig + firstDig + thirdDig)/3;
+		//579
 	
-	//579
-	
-	if (secondDig > firstDig && thirdDig > secondDig && firstDig < thirdDig)
-	{
-	max = thirdDig;
-	
-	min = firstDig;
-	}
-	//931
-	else if (firstDig > secondDig && thirdDig < secondDig && firstDig > thirdDig)
-	{
-	max = firstDig;
-			
-	min = thirdDig;
-	}
-	//486
-	else if (secondDig > firstDig && thirdDig > firstDig && thirdDig < secondDig)
-	{
-	max = secondDig;
-			
-	min = firstDig;
-	}
-	//452
-	else if (firstDig < secondDig && thirdDig < firstDig && secondDig > thirdDig)
-	{
-	max = secondDig;
-	
-	min = thirdDig;
-	}
-	//536	
-	else if (firstDig > secondDig && secondDig < thirdDig && thirdDig > firstDig)
-	{
-	max = thirdDig;
-	
-	min = secondDig;
+		if (secondDig > firstDig && thirdDig > secondDig && firstDig < thirdDig)//creating if statement for Con 1
+		{
+			max = thirdDig;//assigning variables
+			min = firstDig;
+		}
+		//931
+		else if (firstDig > secondDig && thirdDig < secondDig && firstDig > thirdDig)//creating else if statement for Con 2
+		{
+			max = firstDig;//assigning variables
+			min = thirdDig;
+		}
+		//486
+		else if (secondDig > firstDig && thirdDig > firstDig && thirdDig < secondDig)//creating else if statement for Con 3
+		{
+			max = secondDig;//assigning variables
+			min = firstDig;
+		}
+		//452
+		else if (firstDig < secondDig && thirdDig < firstDig && secondDig > thirdDig)//creating else if statement for Con 4
+		{
+			max = secondDig;//assigning variables	
+			min = thirdDig;
+		}
+		//536	
+		else if (firstDig > secondDig && secondDig < thirdDig && thirdDig > firstDig)//creating else if statement for Con 5
+		{
+			max = thirdDig;//assigning variables
+			min = secondDig;
 	}
 		
-	System.out.println("The largest of the three digits is: " + max);
+	System.out.println("The largest of the three digits is: " + max);//outputting all the collected data
 	
 	System.out.println("The smallest of the three digits is: " + min);
 	

@@ -12,33 +12,33 @@ Course: Computer Science 10
 
 package Assingments;
 
-import java.util.Scanner;
+import java.util.Scanner;//import scanner
 
 public class GuessGame 
 {
 
 	public static void main(String[] args)
 	{
-	Scanner userinput = new Scanner(System.in);
+		Scanner userinput = new Scanner(System.in);//create scanner
 		
-	int randomnum = 1 + (int) (Math.random() * 20);
+		int randomnum = 1 + (int) (Math.random() * 20);//creating computer's random num
 
-	System.out.println("Enter a number between 1 and 20: ");
+		System.out.println("Enter a number between 1 and 20: ");//prompt for guess
 	
-	int guess = userinput.nextInt();
+		int guess = userinput.nextInt();//record guess
 	
-	System.out.println("Computer's number is: " + randomnum);
+		System.out.println("Computer's number is: " + randomnum);//output comp num
 	
-	System.out.println("Player's number is: " + guess);
+		System.out.println("Player's number is: " + guess);//output guess
 	
-	if (randomnum == guess)
-	{
-	System.out.println("You Won!");	
-	}
-	else
-	{
-	System.out.println("Better luck next time.");	
-	}
+		if (randomnum == guess)// creating statement if guess is right
+		{
+			System.out.println("You Won!");//output message	
+		}
+		else//create else statement
+		{
+			System.out.println("Better luck next time.");//output message
+		}
 	}
 
 }
