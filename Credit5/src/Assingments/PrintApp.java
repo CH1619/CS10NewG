@@ -11,52 +11,52 @@ Course: Computer Science 10
 */
 package Assingments;
 
-import java.util.Scanner;
+import java.util.Scanner;//import scanner
 
 public class PrintApp 
 {
 
 	public static void main(String[] args) 
 	{
-	Scanner userinput = new Scanner(System.in);
+		Scanner userinput = new Scanner(System.in);//create scanner
 	
-	System.out.println("Enter the number of copies to be printed: ");
+		System.out.println("Enter the number of copies to be printed: ");//prompt for copies
 	
-	int copies = userinput.nextInt();
+		int copies = userinput.nextInt();//record copies
 	
-	double price = 0;
+		double price = 0;//creating price variable
 	
-	if (copies < 100)
-	{
-	price = 0.30;
+		if (copies < 100)//creating if statement 
+		{
+			price = 0.30;//assigning price
 	
-	}
-	else if (copies > 99 && copies < 500)
-	{
-	price = 0.28;	
+		}
+		else if (copies > 99 && copies < 500)//creating else if statement 
+		{
+			price = 0.28;//assigning price	
 	
-	}
-	else if (copies > 499 && copies < 750)
-	{
-	price = 0.27;	
+		}
+		else if (copies > 499 && copies < 750)//creating else if statement 
+		{
+			price = 0.27;//assigning price	
 	
-	}
-	else if (copies > 749 && copies < 1000)
-	{
-	price = 0.26;	
+		}
+		else if (copies > 749 && copies < 1000)//creating else if statement 
+		{
+			price = 0.26;//assigning price	
 	
-	}
-	else if (copies > 1000)
-	{
-	price = 0.25;	
+		}
+		else //creating else statement 
+		{
+			price = 0.25;//assigning price	
 	
-	}
+		}
 	
-	double cost = copies*price;
+		double cost = copies*price;//calculate the total cost
 	
-	System.out.println("Price per copy is: " + price);
+		System.out.println("Price per copy is: " + price);//output copies
 	
-	System.out.println("Total Cost is: " + cost);
+		System.out.println("Total Cost is: " + cost);//output cost
 	}
 
 }
