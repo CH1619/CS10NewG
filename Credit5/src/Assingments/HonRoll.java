@@ -56,3 +56,15 @@ public class HonRoll
 	
 
 }
+/* Screen Dump
+Please enter your GPA, or -1 to quit the program: 
+3.0
+Your gpa is 3.0
+Sorry, at this gpa, you did not qualify for an honours distinction
+To continue, enter another gpa. To quit, enter -1
+-1
+Thank you for using our program, have a great day!
+
+
+
+ */
