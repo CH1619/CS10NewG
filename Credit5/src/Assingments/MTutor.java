@@ -40,33 +40,33 @@ public class MTutor
 		double Canswer = 0;
 		switch (operator)//creating switch statement
 		{
-		case 1://Addition 
-			Canswer = randomnum1 + randomnum2;//create correct answer
-			System.out.println("What is " + randomnum1 + "+" + randomnum2 + "?");//prompt for answer
-			answer = userinput.nextInt();//record answer
+			case 1://Addition 
+				Canswer = randomnum1 + randomnum2;//create correct answer
+				System.out.println("What is " + randomnum1 + "+" + randomnum2 + "?");//prompt for answer
+				answer = userinput.nextInt();//record answer
 			
-			break;//break case
+				break;//break case
 	
-		case 2://Subtraction
-			Canswer = randomnum1 - randomnum2;//create correct answer
-			System.out.println("What is " + randomnum1 + "-" + randomnum2 + "?");//prompt for answer
-			answer = userinput.nextInt();//record answer
+			case 2://Subtraction
+				Canswer = randomnum1 - randomnum2;//create correct answer
+				System.out.println("What is " + randomnum1 + "-" + randomnum2 + "?");//prompt for answer
+				answer = userinput.nextInt();//record answer
 			
-			break;//break case
+				break;//break case
 	
-		case 3://Division
-			Canswer = randomnum1/randomnum2;//create correct answer
-			System.out.println("What is " + randomnum1 + "/" + randomnum2 + "?");//prompt for answer
-			answer = userinput.nextInt();//record answer
+			case 3://Division
+				Canswer = randomnum1/randomnum2;//create correct answer
+				System.out.println("What is " + randomnum1 + "/" + randomnum2 + "?");//prompt for answer
+				answer = userinput.nextInt();//record answer
 			
-			break;//break case
+				break;//break case
 	
-		case 4://Multiplication
-			Canswer = randomnum1*randomnum2;//create correct answer
-			System.out.println("What is " + randomnum1 + "*" + randomnum2 + "?");//prompt for answer
-			answer = userinput.nextInt();//record answer
+			case 4://Multiplication
+				Canswer = randomnum1*randomnum2;//create correct answer
+				System.out.println("What is " + randomnum1 + "*" + randomnum2 + "?");//prompt for answer
+				answer = userinput.nextInt();//record answer
 			
-			break;//break case
+				 break;//break case
 		}//end switch statement
 		
 		if (answer == Canswer)//checking answer, create if statement 
