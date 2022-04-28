@@ -34,66 +34,50 @@ public class MTutor
 		System.out.println("4 : Multiplication");
 	
 		int operator = userinput.nextInt();//record operator
-	
+		
+		double answer = 0;
+		
+		double Canswer = 0;
 		switch (operator)//creating switch statement
 		{
 		case 1://Addition 
-			int Canswer = randomnum1 + randomnum2;//create correct answer
+			Canswer = randomnum1 + randomnum2;//create correct answer
 			System.out.println("What is " + randomnum1 + "+" + randomnum2 + "?");//prompt for answer
-			int answer = userinput.nextInt();//record answer
-			if (answer == Canswer)//checking answer, create if statement 
-			{
-				System.out.println("You got it right! Congradulations!!");//output message 
-			}
-			else//creating else statement if wrong
-			{
-				System.out.println("you were incorrect. You'll get it next time!");//output message
-			}
+			answer = userinput.nextInt();//record answer
+			
 			break;//break case
 	
 		case 2://Subtraction
-			int Canswer2 = randomnum1 - randomnum2;//create correct answer
+			Canswer = randomnum1 - randomnum2;//create correct answer
 			System.out.println("What is " + randomnum1 + "-" + randomnum2 + "?");//prompt for answer
-			int answer2 = userinput.nextInt();//record answer
-			if (answer2 == Canswer2)//checking answer, create if statement
-			{
-				System.out.println("You got it right! Congradulations!!");//output message 
-			}
-			else//creating else statement if wrong
-			{
-				System.out.println("you were incorrect. You'll get it next time!");//output message 
-			}
+			answer = userinput.nextInt();//record answer
+			
 			break;//break case
 	
 		case 3://Division
-			int Canswer3 = randomnum1/randomnum2;//create correct answer
+			Canswer = randomnum1/randomnum2;//create correct answer
 			System.out.println("What is " + randomnum1 + "/" + randomnum2 + "?");//prompt for answer
-			int answer3 = userinput.nextInt();//record answer
-			if (answer3 == Canswer3)//checking answer, create if statement
-			{
-				System.out.println("You got it right! Congradulations!!");//output message 
-			}
-			else//creating else statement if wrong
-			{
-				System.out.println("you were incorrect. You'll get it next time!");//output message 
-			}
+			answer = userinput.nextInt();//record answer
+			
 			break;//break case
 	
 		case 4://Multiplication
-			int Canswer4 = randomnum1*randomnum2;//create correct answer
+			Canswer = randomnum1*randomnum2;//create correct answer
 			System.out.println("What is " + randomnum1 + "*" + randomnum2 + "?");//prompt for answer
-			int answer4 = userinput.nextInt();//record answer
-			if (answer4 == Canswer4)//checking answer, create if statement
-			{
-				System.out.println("You got it right! Congratulations!!");//output message 
-			}
-			else//creating else statement if wrong
-			{
-				System.out.println("You were incorrect. You'll get it next time!");//output message 
-			}
+			answer = userinput.nextInt();//record answer
+			
 			break;//break case
 		}//end switch statement
-	
+		
+		if (answer == Canswer)//checking answer, create if statement 
+		{
+			System.out.println("You got it right! Congradulations!!");//output message 
+		}
+		else//creating else statement if wrong
+		{
+			System.out.println("you were incorrect. You'll get it next time!");//output message
+		}
+
 	}
 
 }

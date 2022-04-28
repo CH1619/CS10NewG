@@ -46,7 +46,7 @@ public class FinalProject
 			price = 7.00;
 		}
 		
-		System.out.println("Your price is: " + price + "$");
+		System.out.println("Your price is: " + price + "0$");
 		
 		System.out.println("Would you like to add butter for $1?");
 		
@@ -58,7 +58,7 @@ public class FinalProject
 		{
 		Double Nprice = price + 1.00;
 		
-		System.out.println("Your price is: " + Nprice + "$");
+		System.out.println("Your price is: " + Nprice + "0$");
 		
 		}
 		

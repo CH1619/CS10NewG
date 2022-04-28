@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
 
 public class Credit5GUI {
 
@@ -20,6 +21,7 @@ public class Credit5GUI {
 	private JTextField Fn;
 	private JTextField Ln;
 
+	ImageIcon img1 = new ImageIcon("C:\\Users\\16192005\\git\\CS10NewG\\Credit5\\src\\Window\\images.jpg");
 	/**
 	 * Launch the application.
 	 */
@@ -53,7 +55,7 @@ public class Credit5GUI {
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 22, 555, 279);
+		panel.setBounds(10, 22, 555, 298);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
@@ -64,12 +66,16 @@ public class Credit5GUI {
 		
 		JLabel dis = new JLabel(" ");
 		dis.setFont(new Font("Times New Roman", Font.PLAIN, 12));
-		dis.setBounds(10, 212, 496, 56);
+		dis.setBounds(271, 139, 261, 153);
 		panel.add(dis);
 		
 		JLabel fn = new JLabel("First Name");
 		fn.setBounds(10, 11, 87, 30);
 		panel.add(fn);
+		
+		JLabel pic = new JLabel("");
+		pic.setBounds(20, 153, 247, 139);
+		panel.add(pic);
 		
 		Fn = new JTextField();
 		Fn.setBounds(93, 16, 145, 20);
@@ -100,6 +106,7 @@ public class Credit5GUI {
 			if(g2.getSelectedItem().equals("10"))
 			{
 			grade = 10;
+			pic.setIcon(img1);
 			}
 			else if(g2.getSelectedItem().equals("11"))
 			{
@@ -131,7 +138,6 @@ public class Credit5GUI {
 		panel.add(cl);
 		
 		
-		
-		
+			
 	}
 }
