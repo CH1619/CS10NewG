@@ -75,12 +75,13 @@ public class FinalProject
 /* Screen Dump
 Welcome to Cineplex! Please enter your popcorn size: 
 Small: 1 Regular: 2 Large : 3 No popcorn: -1
-2
-Your price is: $5.00
+3
+Your price is: $7.00
 Would you like to add butter for $1?
 1: no butter 2: add butter
-1
-Please enter another size or -1 to quit
+2
+Your price is: $8.00
+Please enter another size: Small: 1 Regular: 2 Large : 3 No popcorn: -1 
 -1
 Transaction complete, enjoy your movie!
 
