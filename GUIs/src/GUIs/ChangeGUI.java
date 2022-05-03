@@ -71,20 +71,21 @@ public class ChangeGUI {
 		Chh.setColumns(10);
 		
 		JButton sub = new JButton("Submit");
-		sub.addActionListener(new ActionListener() {
+		sub.addActionListener(new ActionListener() 
+		{
 			public void actionPerformed(ActionEvent e) 
 			{
-			String chg = Chh.getText();
+				String chg = Chh.getText();
 		
-			int change = Integer.parseInt(chg);
+				int change = Integer.parseInt(chg);
 			
-			int quarters = change / 25;
+				int quarters = change / 25;
 			
-			int dimes = (change % 25)/10;
+				int dimes = (change % 25)/10;
 		
-			int nickels = ((change % 25)%10)/5;
+				int nickels = ((change % 25)%10)/5;
 	
-			dis.setText("Quarters: " + quarters + " Dimes: " + dimes + " Nickels: " + nickels);
+				dis.setText("Quarters: " + quarters + " Dimes: " + dimes + " Nickels: " + nickels);
 			
 			}
 		});

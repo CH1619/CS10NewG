@@ -71,20 +71,21 @@ public class DigitsGUI {
 		panel.add(dis);
 		
 		JButton btnNewButton = new JButton("Sumbit");
-		btnNewButton.addActionListener(new ActionListener() {
+		btnNewButton.addActionListener(new ActionListener() 
+		{
 			public void actionPerformed(ActionEvent e) 
-			{
-			String threedig = dig.getText();
+			{			
+				String threedig = dig.getText();
+					
+				int number = Integer.parseInt(threedig);
 			
-			int number = Integer.parseInt(threedig);
-			
-			int hundreds = number/100;
+				int hundreds = number/100;
 		
-			int tens = (number%100)/10;
+				int tens = (number%100)/10;
 			
-			int ones = ((number%100)%10)/1;
+				int ones = ((number%100)%10)/1;
 			
-			dis.setText("The hundreds digit: " + hundreds + " The tens digits: " + tens + " The ones digit: " + ones);
+				dis.setText("The hundreds digit: " + hundreds + " The tens digits: " + tens + " The ones digit: " + ones);
 			}
 		});
 		btnNewButton.setBounds(10, 84, 105, 50);

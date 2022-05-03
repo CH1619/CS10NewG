@@ -106,7 +106,8 @@ public class Assignment6GUI {
 		panel.add(dis);
 		
 		JButton Sub = new JButton("Submit");
-		Sub.addActionListener(new ActionListener() {
+		Sub.addActionListener(new ActionListener() 
+		{
 			public void actionPerformed(ActionEvent e) 
 			{
 				String fn = Fnn.getText();

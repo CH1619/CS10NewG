@@ -63,11 +63,11 @@ public class GradeGUI {
 		panel.add(titl);
 		
 		JLabel Gr = new JLabel("Please enter your grade percentage:");
-		Gr.setBounds(22, 45, 186, 14);
+		Gr.setBounds(22, 45, 253, 14);
 		panel.add(Gr);
 		
 		Grr = new JTextField();
-		Grr.setBounds(209, 42, 86, 20);
+		Grr.setBounds(244, 42, 83, 20);
 		panel.add(Grr);
 		Grr.setColumns(10);
 		
@@ -78,55 +78,63 @@ public class GradeGUI {
 			{
 				String grade = Grr.getText();
 			
-					
+				int Gradep = Integer.parseInt(grade);//get the integer part	
 				
-					if  (grade > 89)
+					if  (Gradep > 89)
 					{
-					dis.setText("The cor");	
+						dis.setText("The corresonding letter grade is A+");	
 					}
-					else if (grade > 79) && grade < 90)//create if statement
+					else if (Gradep > 79 && Gradep < 90)
 					{
-						
+						dis.setText("The corresonding letter grade is A");	
 					}
-					else if (grade > 74 && grade < 80)//create else if statement
+					else if (Gradep > 74 && Gradep < 80)
 					{
-						
+						dis.setText("The corresonding letter grade is B+");
+					}
+					else if (Gradep > 69 && Gradep < 75)
+					{
+						dis.setText("The corresonding letter grade is B");
+					}
+					else if (Gradep > 64 && Gradep < 70)
+					{
+						dis.setText("The corresonding letter grade is C+");
 				
 					}
-					else if (grade > 69 && grade < 75)//create else if statement
+					else if (Gradep > 59 && Gradep < 65)
 					{
-						
+						dis.setText("The corresonding letter grade is C");
 					}
-					else if (grade > 64 && grade < 70)//create else if statement
+					else if (Gradep > 54 && Gradep < 60)
 					{
-						
-				
+						dis.setText("The corresonding letter grade is D+");	
 					}
-					else if (grade > 59 && grade < 65)//create else if statement
+					else if (Gradep > 49 && Gradep < 55)
 					{
-						
-					}
-					else if (grade > 54 && grade < 60)//create else if statement
-					{
-						
-					}
-					else if (grade > 49 && grade < 55)//create else if statement
-					{
+						dis.setText("The corresonding letter grade is D");
 						
 					}
 					else  
 					{
-					
+						dis.setText("The corresonding letter grade is F");
 					}
 			}
 			
 			});
 		
-		sub.setBounds(22, 70, 89, 39);
+		sub.setBounds(62, 70, 115, 39);
 		panel.add(sub);
 		
 		JButton clr = new JButton("Clear");
-		clr.setBounds(129, 70, 89, 39);
+		clr.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e) 
+			{
+				dis.setText("");
+				Grr.setText("");
+			}
+		});
+		clr.setBounds(212, 70, 115, 39);
 		panel.add(clr);
 		
 		
