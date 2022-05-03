@@ -111,6 +111,8 @@ public class Credit5GUI {
 			else if(g2.getSelectedItem().equals("11"))
 			{
 			grade = 11;
+			Credit5GUIv2 k = new Credit5GUIv2();
+			
 			}
 			else
 			{
