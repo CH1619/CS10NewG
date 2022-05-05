@@ -57,6 +57,10 @@ public class PrintingGUI {
 		titl.setBounds(139, 11, 174, 20);
 		panel.add(titl);
 		
+		JLabel dis = new JLabel("");
+		dis.setBounds(10, 119, 371, 25);
+		panel.add(dis);
+		
 		JLabel cop = new JLabel("Enter the the number of copies: ");
 		cop.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		cop.setBounds(10, 54, 206, 14);
@@ -68,22 +72,63 @@ public class PrintingGUI {
 		cops.setColumns(10);
 		
 		JButton sub = new JButton("Submit ");
-		sub.addActionListener(new ActionListener() {
+		sub.addActionListener(new ActionListener()
+		{
 			public void actionPerformed(ActionEvent e) 
 			{
+				String cop = cops.getText();
+				
+				int copies = Integer.parseInt(cop);
+				
+				double price = 0;
+				
+				if (copies < 100)
+				{
+					price = 0.30;
 			
-			}
+				}
+				else if (copies > 99 && copies < 500)
+				{
+					price = 0.28;	
+			
+				}
+				else if (copies > 499 && copies < 750)
+				{
+					price = 0.27;	
+			
+				}
+				else if (copies > 749 && copies < 1000)
+				{
+					price = 0.26;
+			
+				}
+				else 
+				{
+					price = 0.25;
+			
+				}
+		
+				double cost = copies*price;
+			
+				dis.setText("The Price per copy is: $" + price + "0, The cost is: $" + cost + "0");
+			
+			
+			}	
 		});
 		sub.setBounds(240, 79, 98, 35);
 		panel.add(sub);
 		
 		JButton clr = new JButton("Clear");
+		clr.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				dis.setText("");
+				cops.setText("");
+			}
+		});
 		clr.setBounds(331, 215, 93, 35);
 		panel.add(clr);
 		
-		JLabel dis = new JLabel("");
-		dis.setBounds(10, 89, 220, 25);
-		panel.add(dis);
+		
 	}
-
 }
