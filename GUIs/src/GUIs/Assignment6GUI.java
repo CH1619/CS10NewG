@@ -140,5 +140,9 @@ public class Assignment6GUI {
 		titl.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		titl.setBounds(483, -9, 178, 55);
 		panel.add(titl);
+		
+		JLabel dis2 = new JLabel("");
+		dis2.setBounds(483, 50, 219, 79);
+		panel.add(dis2);
 	}
 }
