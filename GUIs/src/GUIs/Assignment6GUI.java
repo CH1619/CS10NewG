@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -21,6 +22,7 @@ public class Assignment6GUI {
 	private JTextField Schoo;
 	private JTextField Hobb;
 
+	ImageIcon img2 = new ImageIcon("C:\\Users\\16192005\\git\\CS10NewG\\GUIs\\src\\Pics\\img2.jpg");
 	/**
 	 * Launch the application.
 	 */
@@ -36,7 +38,7 @@ public class Assignment6GUI {
 			}
 		});
 	}
-
+	
 	/**
 	 * Create the application.
 	 */
@@ -49,7 +51,7 @@ public class Assignment6GUI {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 735, 300);
+		frame.setBounds(100, 100, 879, 396);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel panel = new JPanel();
@@ -105,6 +107,10 @@ public class Assignment6GUI {
 		dis.setBounds(10, 140, 692, 97);
 		panel.add(dis);
 		
+		JLabel pic = new JLabel("");
+		pic.setBounds(483, 37, 281, 190);
+		panel.add(pic);
+		
 		JButton Sub = new JButton("Submit");
 		Sub.addActionListener(new ActionListener() 
 		{
@@ -119,6 +125,8 @@ public class Assignment6GUI {
 				String scho = Schoo.getText();
 				
 				String hob2 = Hobb.getText();
+				
+				pic.setIcon(img2);
 				
 				dis.setText("Hello, your name is " + fn + " " + ln + ". You are currently in Grade " + gr + " at " + scho + ". Your Favourite hobby is " + hob2);
 			}
@@ -141,8 +149,6 @@ public class Assignment6GUI {
 		titl.setBounds(483, -9, 178, 55);
 		panel.add(titl);
 		
-		JLabel dis2 = new JLabel("");
-		dis2.setBounds(483, 50, 219, 79);
-		panel.add(dis2);
+		
 	}
 }
