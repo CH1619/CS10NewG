@@ -8,6 +8,7 @@ import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -17,6 +18,7 @@ public class ChangeGUI {
 	private JFrame frame;
 	private JTextField Chh;
 
+	ImageIcon img3 = new ImageIcon("C:\\Users\\16192005\\git\\CS10NewG\\GUIs\\src\\Pics\\img3.jpg");
 	/**
 	 * Launch the application.
 	 */
@@ -45,7 +47,7 @@ public class ChangeGUI {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 583, 262);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel panel = new JPanel();
@@ -61,8 +63,12 @@ public class ChangeGUI {
 		Ch.setBounds(10, 62, 105, 14);
 		panel.add(Ch);
 		
+		JLabel pic = new JLabel("");
+		pic.setBounds(357, 27, 195, 187);
+		panel.add(pic);
+		
 		JLabel dis = new JLabel("");
-		dis.setBounds(10, 111, 375, 42);
+		dis.setBounds(10, 111, 310, 42);
 		panel.add(dis);
 		
 		Chh = new JTextField();
@@ -87,6 +93,7 @@ public class ChangeGUI {
 	
 				dis.setText("Quarters: " + quarters + " Dimes: " + dimes + " Nickels: " + nickels);
 			
+				pic.setIcon(img3);
 			}
 		});
 		sub.setBounds(258, 23, 89, 23);
@@ -104,6 +111,6 @@ public class ChangeGUI {
 		panel.add(clr);
 		
 		
+		
 	}
-
 }

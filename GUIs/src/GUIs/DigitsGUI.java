@@ -8,6 +8,7 @@ import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -16,7 +17,8 @@ public class DigitsGUI {
 
 	private JFrame frame;
 	private JTextField dig;
-
+	
+	ImageIcon img4 = new ImageIcon("C:\\Users\\16192005\\git\\CS10NewG\\GUIs\\src\\Pics\\img4.png");
 	/**
 	 * Launch the application.
 	 */
@@ -66,6 +68,10 @@ public class DigitsGUI {
 		panel.add(dig);
 		dig.setColumns(10);
 		
+		JLabel pic = new JLabel("");
+		pic.setBounds(267, 11, 157, 119);
+		panel.add(pic);
+		
 		JLabel dis = new JLabel("");
 		dis.setBounds(10, 141, 403, 50);
 		panel.add(dis);
@@ -86,6 +92,8 @@ public class DigitsGUI {
 				int ones = ((number%100)%10)/1;
 			
 				dis.setText("The hundreds digit: " + hundreds + " The tens digits: " + tens + " The ones digit: " + ones);
+			
+				pic.setIcon(img4);
 			}
 		});
 		btnNewButton.setBounds(10, 84, 105, 50);
@@ -101,6 +109,8 @@ public class DigitsGUI {
 		});
 		btnClear.setBounds(125, 84, 105, 50);
 		panel.add(btnClear);
+		
+		
 	}
 
 }

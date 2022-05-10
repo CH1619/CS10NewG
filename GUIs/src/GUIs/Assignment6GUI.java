@@ -51,7 +51,7 @@ public class Assignment6GUI {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 879, 396);
+		frame.setBounds(100, 100, 995, 396);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel panel = new JPanel();
@@ -108,7 +108,7 @@ public class Assignment6GUI {
 		panel.add(dis);
 		
 		JLabel pic = new JLabel("");
-		pic.setBounds(483, 37, 281, 190);
+		pic.setBounds(659, 11, 280, 197);
 		panel.add(pic);
 		
 		JButton Sub = new JButton("Submit");
