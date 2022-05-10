@@ -8,6 +8,7 @@ import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -17,6 +18,10 @@ public class GuessGameGUI {
 	private JFrame frame;
 	private JTextField guess;
 
+	ImageIcon img7 = new ImageIcon("C:\\Users\\16192005\\git\\CS10NewG\\GUIs\\src\\Pics\\img7.png");
+	
+	ImageIcon img8 = new ImageIcon("C:\\Users\\16192005\\git\\CS10NewG\\GUIs\\src\\Pics\\img8.jpg");
+	/**
 	/**
 	 * Launch the application.
 	 */
@@ -45,7 +50,7 @@ public class GuessGameGUI {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 450, 421);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel panel = new JPanel();
@@ -74,6 +79,10 @@ public class GuessGameGUI {
 		dis.setBounds(49, 97, 270, 39);
 		panel.add(dis);
 		
+		JLabel pic = new JLabel("");
+		pic.setBounds(224, 122, 200, 249);
+		panel.add(pic);
+		
 		JLabel dis2 = new JLabel("");
 		dis2.setBounds(49, 147, 251, 39);
 		panel.add(dis2);
@@ -94,11 +103,13 @@ public class GuessGameGUI {
 			
 				if(numG == randomnum)
 				{
-					dis2.setText("Congrats! You were correct!");	
+					dis2.setText("Congrats! You were correct!");
+					pic.setIcon(img8);
 				}
 				else
 				{
 					dis2.setText("Better luck next time.");	
+					pic.setIcon(img7);
 				}
 			
 			}
@@ -117,6 +128,7 @@ public class GuessGameGUI {
 		});
 		clr.setBounds(329, 76, 89, 35);
 		panel.add(clr);
+		
 		
 		
 	}

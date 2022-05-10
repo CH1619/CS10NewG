@@ -8,6 +8,7 @@ import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -17,6 +18,7 @@ public class PrintingGUI {
 	private JFrame frame;
 	private JTextField cops;
 
+	ImageIcon img9 = new ImageIcon("C:\\Users\\16192005\\git\\CS10NewG\\GUIs\\src\\Pics\\img9.png");
 	/**
 	 * Launch the application.
 	 */
@@ -60,6 +62,10 @@ public class PrintingGUI {
 		JLabel dis = new JLabel("");
 		dis.setBounds(10, 119, 371, 25);
 		panel.add(dis);
+		
+		JLabel pic = new JLabel("");
+		pic.setBounds(10, 155, 303, 95);
+		panel.add(pic);
 		
 		JLabel cop = new JLabel("Enter the the number of copies: ");
 		cop.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -112,6 +118,7 @@ public class PrintingGUI {
 			
 				dis.setText("The Price per copy is: $" + price + "0, The cost is: $" + cost + "0");
 			
+				pic.setIcon(img9);
 			
 			}	
 		});
@@ -128,6 +135,8 @@ public class PrintingGUI {
 		});
 		clr.setBounds(331, 215, 93, 35);
 		panel.add(clr);
+		
+		
 		
 		
 	}
