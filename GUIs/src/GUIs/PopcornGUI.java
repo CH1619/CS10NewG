@@ -48,7 +48,7 @@ public class PopcornGUI {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 567, 300);
+		frame.setBounds(100, 100, 610, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel panel = new JPanel();
@@ -63,8 +63,8 @@ public class PopcornGUI {
 		panel.add(titl);
 		
 		JLabel subtitl = new JLabel("Welcome to the Kinmount theatre! If you wish to buy popcorn or a soft drink, use the window below.");
-		subtitl.setHorizontalAlignment(SwingConstants.CENTER);
-		subtitl.setBounds(10, 28, 531, 14);
+		subtitl.setHorizontalAlignment(SwingConstants.LEFT);
+		subtitl.setBounds(10, 28, 579, 14);
 		panel.add(subtitl);
 		
 		JLabel pop = new JLabel("Popcorn");
@@ -162,6 +162,12 @@ public class PopcornGUI {
 		panel.add(ent);
 		
 		JButton clr = new JButton("Clear");
+		clr.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+			dis.setText("");
+			}
+		});
 		clr.setBounds(193, 98, 89, 39);
 		panel.add(clr);
 		
