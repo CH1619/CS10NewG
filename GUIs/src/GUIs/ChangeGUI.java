@@ -99,7 +99,7 @@ public class ChangeGUI {
 				pic.setIcon(img3);
 			}
 		});
-		sub.setBounds(258, 23, 89, 23);
+		sub.setBounds(258, 8, 89, 30);
 		panel.add(sub);
 		
 		JButton clr = new JButton("Clear");
@@ -110,7 +110,7 @@ public class ChangeGUI {
 			dis.setText("");
 			}
 		});
-		clr.setBounds(258, 58, 89, 23);
+		clr.setBounds(258, 49, 89, 32);
 		panel.add(clr);
 		
 		

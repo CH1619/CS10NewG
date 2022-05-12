@@ -12,6 +12,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
+import javax.swing.SwingConstants;
 
 public class Assignment6GUI {
 
@@ -150,8 +151,9 @@ public class Assignment6GUI {
 		panel.add(Clr);
 		
 		JLabel titl = new JLabel("Assignment 6");
+		titl.setVerticalAlignment(SwingConstants.TOP);
 		titl.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		titl.setBounds(483, -9, 178, 55);
+		titl.setBounds(483, 11, 178, 55);
 		panel.add(titl);
 		
 		
