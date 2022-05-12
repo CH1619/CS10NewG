@@ -12,6 +12,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
 
 public class ChangeGUI {
 
@@ -55,6 +56,7 @@ public class ChangeGUI {
 		panel.setLayout(null);
 		
 		JLabel titl = new JLabel("Change Application");
+		titl.setVerticalAlignment(SwingConstants.TOP);
 		titl.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		titl.setBounds(10, 11, 145, 42);
 		panel.add(titl);
@@ -68,6 +70,7 @@ public class ChangeGUI {
 		panel.add(pic);
 		
 		JLabel dis = new JLabel("");
+		dis.setVerticalAlignment(SwingConstants.TOP);
 		dis.setBounds(10, 111, 310, 42);
 		panel.add(dis);
 		

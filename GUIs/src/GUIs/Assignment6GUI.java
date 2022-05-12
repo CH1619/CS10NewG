@@ -104,11 +104,11 @@ public class Assignment6GUI {
 		panel.add(Hobb);
 		
 		JLabel dis = new JLabel("");
-		dis.setBounds(10, 140, 692, 97);
+		dis.setBounds(10, 140, 651, 97);
 		panel.add(dis);
 		
 		JLabel pic = new JLabel("");
-		pic.setBounds(659, 11, 280, 197);
+		pic.setBounds(641, 5, 328, 241);
 		panel.add(pic);
 		
 		JButton Sub = new JButton("Submit");
@@ -139,6 +139,11 @@ public class Assignment6GUI {
 			public void actionPerformed(ActionEvent e) 
 			{
 			dis.setText("");
+			Fn.setText("");
+			Ln.setText("");
+			Gr.setText("");
+			Hob.setText("");
+			Scho.setText("");
 			}
 		});
 		Clr.setBounds(357, 101, 116, 23);
