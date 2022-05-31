@@ -197,7 +197,7 @@ public class PopcornGUI {
 					}
 			}
 		});
-		ent.setBounds(193, 53, 89, 40);
+		ent.setBounds(176, 53, 106, 39);
 		panel.add(ent);
 		
 		JButton clr = new JButton("Clear");
@@ -206,10 +206,10 @@ public class PopcornGUI {
 			{
 			dis.setText("");
 			dis2.setText("");
-			pic.setText("");
+			
 			}
 		});
-		clr.setBounds(193, 98, 89, 39);
+		clr.setBounds(176, 98, 106, 39);
 		panel.add(clr);
 		
 		
